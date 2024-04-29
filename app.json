@@ -1,7 +1,7 @@
 {
   "name": "PRATIBHA-CHAT-BOT",
-  "description": "A telegram bot",
-  "logo": "https://telegra.ph/file/00eb565274ccbffcf149d.jpg",
+  "description": "ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛʙᴏᴛ",
+  "logo": "https://telegra.ph/file/7145ffa058eb45404b2b7.jpg",
   "keywords": [
     "Chatbot",
     "mongodb",
@@ -11,30 +11,30 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/tinaarobot/CHATBOT",
+  "repository": "https://github.com/SANATANI-EDITZ/CHATBOT",
   "env": {
     "API_ID": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ ᴍʏ.ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ/ᴀᴘᴘs.",
       "required": true,
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ ᴍʏ.ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ/ᴀᴘᴘs.",
       "required": true,
       "value": ""
     },
     "BOT_TOKEN": {
-      "description": "A Bot token from @BotFather",
+      "description": "ᴀ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ ʙᴏᴛ-ғᴀᴛʜᴇʀ",
       "required": true,
       "value": ""
     },
     "MONGO_URL": {
-      "description": "Get a mongodb url from https://cloud.mongodb.com.",
+      "description": "ɢᴇᴛ ᴀ ᴍᴏɴɢᴏᴅʙ ᴜʀʟ ғʀᴏᴍ- https://cloud.mongodb.com.",
       "required": true,
       "value": ""
     },
     "OWNER_ID": {
-      "description": "User id of the user who will known as owner of the bot.",
+      "description": "ᴜsᴇʀ ɪᴅ ᴏғ ᴛʜᴇ ᴜsᴇʀ ᴡʜᴏ ᴡɪʟʟ ᴋɴᴏᴡɴ ᴀs ᴏᴡɴᴇʀ ᴏғ ᴛʜᴇ ʙᴏᴛ.",
       "required": true,
       "value": ""
     }
