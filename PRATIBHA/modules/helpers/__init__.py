@@ -7,7 +7,7 @@ from PRATIBHA import OWNER, SACHIN
 
 
 def is_admins(func: Callable) -> Callable:
-    async def non_admin(c: LOCOPILOT, m: Message):
+    async def non_admin(c: SACHIN, m: Message):
         if m.from_user.id == OWNER:
             return await func(c, m)
 
