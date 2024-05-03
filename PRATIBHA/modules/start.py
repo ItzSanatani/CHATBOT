@@ -53,7 +53,7 @@ async def start(_, m: Message):
 
 
 @dev.on_message(filters.command(["help"], prefixes=["+", ".", "/", "-", "?", "$"]))
-async def help(client: LOCOPILOT, m: Message):
+async def help(client: SACHIN, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         hmm = await m.reply_photo(
             photo=random.choice(IMG),
