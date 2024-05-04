@@ -7,7 +7,7 @@ from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import EMOJIOS, IMG, STICKER
-from PRATIBHA import BOT_NAME, SACHIN, dev
+from PRATIBHA import BOT_NAME, BOT_USERNAME, SACHIN, dev
 from PRATIBHA.database.chats import add_served_chat
 from PRATIBHA.database.users import add_served_user
 from PRATIBHA.modules.helpers import (
