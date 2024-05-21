@@ -11,7 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/SANATANI-EDITZ/CHATBOT",
+  "repository": "https://github.com/ITZSANATANI/CHATBOT",
   "env": {
     "API_ID": {
       "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʟᴜᴇ ғʀᴏᴍ ᴍʏ.ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ/ᴀᴘᴘs.",
