@@ -42,17 +42,8 @@ async def start(_, m: Message):
             caption=f"""**❖ ʜᴇʏ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ..!!︎\n\n⬤ ɪ ᴀᴍ {BOT_NAME}, ᴀɪ ʙᴀsᴇ ᴄʜᴀᴛʙᴏᴛ.\n⬤ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.\n\n❖ ᴛᴀᴘ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs**""",
             reply_markup=InlineKeyboardMarkup(DEV_OP),
         )
-    #    await add_served_user(m.from_user.id)
- #   else:
-       # await m.reply_photo(
-        #    photo=random.choice(IMG),
-       #     caption=START,
-        #    reply_markup=InlineKeyboardMarkup(HELP_START),
-     #   )
-    #    await add_served_chat(m.chat.id)
 
-
-@dev.on_message(filters.command(["help"], prefixes=["+", ".", "/", "-", "?", "$"]))
+@dev.on_message(filters.command(["help"], prefixes=["/"]))
 async def help(client: SACHIN, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         hmm = await m.reply_photo(
@@ -61,29 +52,11 @@ async def help(client: SACHIN, m: Message):
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
         )
 
-  #########
-      #  await add_served_user(m.from_user.id)
-  #  else:
-       # await m.reply_photo(
-         #   photo=random.choice(IMG),
-          #  caption="**๏ ʜᴇʏ ʙᴀʙʏ...\n\n๏ ᴘʟᴢ ᴜsᴇ ᴍᴇ ɪɴ ᴘᴠᴛ. ғᴏʀ ʜᴇʟᴏ ᴄᴍᴅs..!**",
-          #  reply_markup=InlineKeyboardMarkup(HELP_BUTN),
-       # )
-       # await add_served_chat(m.chat.id)
 
-#########
-
-@dev.on_message(filters.command("IIIIIIIIIIrepo") & ~filters.bot)
+@dev.on_message(filters.command("repo") & ~filters.bot)
 async def repo(_, m: Message):
     await m.reply_text(
         text= f"""**❖ ᴀᴀ ɢʏᴀ ʀᴇᴘᴏ ʟᴇɴᴇ ʙᴏsᴅᴋ, ʏᴇ ᴠɪᴅᴇᴏ ᴅᴇᴋʜ ᴀᴜʀ ᴀᴘɴɪ ʀᴇᴘᴏ ʟᴇɴᴇ ᴋɪ ᴀᴀɢ ʙʜᴜᴊʜᴀ.**\n\n❖ https://x-hd.video/video/-aubree-valentine-switch-roles-fta-reality-kings.html """,
         reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
         disable_web_page_preview=True,
     )
-
-
-#@dev.on_message(filters.new_chat_members)
-#async def welcome(_, m: Message):
-#    for member in m.new_chat_members:
-     #   await m.reply_photo(photo=random.choice(IMG), caption=START)
-          
